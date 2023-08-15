@@ -5,7 +5,9 @@ public class Cliente {
     private char sexo;
     private int AnoNascimento;
     private boolean especial;
-    
+    private String nome;
+    private String CPF;
+
     public Cliente(){
         double rdm = Math.random();
 
@@ -18,6 +20,23 @@ public class Cliente {
 
         this.renda = renda;
         this.sexo = sexo;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public boolean isEspecial() {
