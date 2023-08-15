@@ -4,7 +4,33 @@ public class Cliente {
     private double renda;
     private char sexo;
     private int AnoNascimento;
+    private boolean especial;
     
+    public Cliente(){
+        double rdm = Math.random();
+
+        if(rdm > 0.5)
+            especial = true;
+    }
+
+    public Cliente(double renda, char sexo){
+        this();
+
+        this.renda = renda;
+        this.sexo = sexo;
+    }
+
+    public boolean isEspecial() {
+        return especial;
+    }
+
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
+    }
+
+
+
     public double getRenda() {
         return renda;
     }
