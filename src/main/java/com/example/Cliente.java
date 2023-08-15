@@ -31,7 +31,7 @@ public class Cliente {
         return AnoNascimento;
     }
     
-    public void setAnoNascimento(int anoNascimento) {
-        AnoNascimento = anoNascimento;
+    public void setAnoNascimento(int AnoNascimento) {
+        this.AnoNascimento = AnoNascimento;
     }
 }
