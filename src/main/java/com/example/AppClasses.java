@@ -1,13 +1,34 @@
 package com.example;
 
+import java.util.Scanner;
+
 public class AppClasses {
     public static void main(String[] args) {
-        
-        Cliente cliente = new Cliente();
+        Scanner input = new Scanner(System.in);
 
-        cliente.setRenda(1300);
-        cliente.setAnoNascimento(2001);
-        cliente.setSexo('F');
+        Cliente cliente = new Cliente();
+        
+        System.out.println("Digite o nome: ");
+        cliente.setNome(input.nextLine());
+
+        System.out.println("Digite o ano de nascimento: ");
+        cliente.setAnoNascimento(input.nextInt());
+
+        input.nextLine();
+        System.out.println("Digite o CPF: ");
+        cliente.setCPF(input.nextLine());
+
+        System.out.println("Digite a renda: ");
+        cliente.setRenda(input.nextDouble());
+
+        input.nextLine();
+        System.out.println("Digite o sexo: ");
+        String sexo = input.nextLine();
+        cliente.setSexo(sexo.charAt(0));
+
+        
+
+
 
         System.out.println("Nome: " + cliente.getNome());
         System.out.println("Ano de nascimento: " + cliente.getAnoNascimento());
