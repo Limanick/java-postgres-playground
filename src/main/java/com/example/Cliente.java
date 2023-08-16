@@ -79,4 +79,8 @@ public class Cliente {
     public void setAnoNascimento(int AnoNascimento) {
         this.AnoNascimento = AnoNascimento;
     }
+
+    public String toString(){
+        return "Cliente: " + nome + " Ano de nascimento: " + AnoNascimento;
+    }
 }
