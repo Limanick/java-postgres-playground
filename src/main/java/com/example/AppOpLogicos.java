@@ -22,7 +22,7 @@ public class AppOpLogicos {
     //ou se o pc ve um && e ja de cara ve um false ele nem ve os outros ja coloca falso.
     //as funções a, b e c printam o proprio nome justamnete pra gente ver qual foi chamada e qual nem chegou a ser chamada por causa das explicações anteriores.
     AppOpLogicos(){
-        System.out.println(a(false) || b(false) && c(false));
+        System.out.println(a(false) || b(true) && c(false));
     }
 
     public static void main(String[] args) {
